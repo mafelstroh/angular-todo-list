@@ -21,8 +21,9 @@ export class TodoSignalsService {
 
   public saveTodosInLocalStorage(): void {
     const todos = JSON.stringify(this.todosState());
-    if (todos) {
+    if (typeof localStorage !== 'undefined' && todos) {
       localStorage.setItem(TodoKeyLocalStorage.TODO_LIST, todos);
     }
   }
+
 }
