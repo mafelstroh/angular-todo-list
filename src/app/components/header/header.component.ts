@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { TodoFormComponent } from '../todo-form/todo-form.component';
 
 
 @Component({
@@ -14,10 +15,15 @@ import { MatDialogModule } from '@angular/material/dialog';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  private dialogService = inject(MatDialog)
 
   public handleOpenModal(): void {
-    alert('Add new task')
+    this.dialogService.open(TodoFormComponent, {
+      width: '50vw',
+      maxHeight: '80vh',
+    })
   }
 
 
 }
+
