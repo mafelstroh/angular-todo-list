@@ -2,19 +2,6 @@
 
 This is a Todo List application developed with Angular 17, designed to help users manage their tasks effectively. The application allows users to create, update, delete, and mark tasks as completed, providing a seamless user experience.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Development Server](#development-server)
-- [Code Scaffolding](#code-scaffolding)
-- [Build](#build)
-- [Running Unit Tests](#running-unit-tests)
-- [Running End-to-End Tests](#running-end-to-end-tests)
-- [Further Help](#further-help)
-- [Acknowledgments](#acknowledgments)
-
 ## Project Overview
 
 This application was built based on the Udemy course [Curso de Angular 15: Do Iniciante ao Especialista](https://www.udemy.com/course/curso-de-angular-15-do-iniciante-ao-especialista/) by Marcos Naves. It showcases the practical application of Angular features such as component architecture, services, and local storage management.
