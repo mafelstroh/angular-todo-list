@@ -11,8 +11,8 @@ import { TodoAddNewEntryFormComponent } from '../todo-add-new-entry-form/todo-ad
   selector: 'app-todo-header',
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatDividerModule, MatIconModule, MatDialogModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './todo-header.component.html',
+  styleUrl: './todo-header.component.scss'
 })
 export class TodoHeaderComponent {
   private dialogService = inject(MatDialog)

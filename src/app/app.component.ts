@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { TodoHeaderComponent } from './components/todo-list/header/header.component';
+import { TodoHeaderComponent } from './components/todo-list/todo-header/todo-header.component';
 import { TodoCardComponent } from './components/todo-list/todo-card/todo-card.component';
 
 @Component({

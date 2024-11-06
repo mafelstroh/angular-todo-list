@@ -13,7 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TodoSignalsService } from '../../../services/todo-signals.service';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { TodoHeaderComponent } from '../header/header.component';
+import { TodoHeaderComponent } from '../todo-header/todo-header.component';
 
 @Component({
   selector: 'app-todo-add-new-entry-form',
