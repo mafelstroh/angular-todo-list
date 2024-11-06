@@ -47,8 +47,12 @@ export class TodoFormComponent {
     if (this.todosForm.value && this.todosForm.valid) {
       const title = String(this.todosForm.controls['title'].value);
       const description = String(this.todosForm.controls['description'].value);
-      //Add validation if the id already exist
-      const id = this.allTodos.length > 0 ? this.allTodos.length + 1 : 1;
+      // Find the highest existing ID and add 1 to it, or use 1 if there are no todos
+      const id =
+        this.allTodos.length > 0
+          ? Math.max(...this.allTodos.map((todo) => todo.id)) + 1
+          : 1;
+
       const done = false;
 
       this.todoSignalsService.updateTodos({ id, title, description, done });

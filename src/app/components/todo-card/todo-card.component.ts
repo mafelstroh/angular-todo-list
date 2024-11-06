@@ -52,6 +52,7 @@ export class TodoCardComponent implements OnInit {
         return todos.map((todo) =>
           todo.id === todoId ? { ...todo, done: !todo.done } : todo
         );
+        this.saveTodosInLocalStorage();
       });
     }
   }
