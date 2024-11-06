@@ -11,12 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { TodoSignalsService } from '../../services/todo-signals.service';
+import { TodoSignalsService } from '../../../services/todo-signals.service';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { HeaderComponent } from '../header/header.component';
+import { TodoHeaderComponent } from '../header/header.component';
 
 @Component({
-  selector: 'app-todo-form',
+  selector: 'app-todo-add-new-entry-form',
   standalone: true,
   imports: [CommonModule,
     FormsModule,
@@ -26,13 +26,13 @@ import { HeaderComponent } from '../header/header.component';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule],
-  templateUrl: './todo-form.component.html',
-  styleUrl: './todo-form.component.scss'
+  templateUrl: './todo-add-new-entry-form.component.html',
+  styleUrl: './todo-add-new-entry-form.component.scss'
 })
-export class TodoFormComponent {
+export class TodoAddNewEntryFormComponent {
 
   private todoSignalsService = inject(TodoSignalsService);
-  private dialogRefService = inject(MatDialogRef<HeaderComponent>)
+  private dialogRefService = inject(MatDialogRef<TodoHeaderComponent>)
   public allTodos = this.todoSignalsService.todosState();
 
   public todosForm = new FormGroup({

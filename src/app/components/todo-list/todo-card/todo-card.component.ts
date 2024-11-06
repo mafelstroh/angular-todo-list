@@ -4,9 +4,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TodoSignalsService } from '../../services/todo-signals.service';
-import { TodoKeyLocalStorage } from '../../models/enum/todoKeyLocalStorage';
-import { Todo } from '../../models/model/todo.model';
+import { TodoSignalsService } from '../../../services/todo-signals.service';
+import { TodoKeyLocalStorage } from '../../../models/enum/todoKeyLocalStorage';
+import { Todo } from '../../../models/model/todo.model';
+
 
 @Component({
   selector: 'app-todo-card',

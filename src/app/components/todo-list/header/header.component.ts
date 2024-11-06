@@ -4,21 +4,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { TodoFormComponent } from '../todo-form/todo-form.component';
+import { TodoAddNewEntryFormComponent } from '../todo-add-new-entry-form/todo-add-new-entry-form.component';
 
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-todo-header',
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatDividerModule, MatIconModule, MatDialogModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class TodoHeaderComponent {
   private dialogService = inject(MatDialog)
 
   public handleOpenModal(): void {
-    this.dialogService.open(TodoFormComponent, {
+    this.dialogService.open(TodoAddNewEntryFormComponent, {
       width: '50vw',
       maxHeight: '80vh',
     })
