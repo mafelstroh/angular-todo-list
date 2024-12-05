@@ -1,6 +1,6 @@
 # Angular Todo List Application
 
-This is a Todo List application developed with Angular 17, designed to help users manage their tasks effectively. The application allows users to create, update, delete, and mark tasks as completed, providing a seamless user experience.
+This is a Todo List application developed with Angular 18, designed to help users manage their tasks effectively. The application allows users to create, update, delete, and mark tasks as completed, providing a seamless user experience.
 
 ## Project Overview
 
@@ -17,7 +17,7 @@ This application was built based on the Udemy course [Curso de Angular 15: Do In
 
 ## Technologies Used
 
-- Angular 17
+- Angular 18
 - TypeScript
 - Angular Material for UI components
 - Local Storage for data persistence
