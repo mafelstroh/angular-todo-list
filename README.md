@@ -22,10 +22,20 @@ This application was built based on the Udemy course [Curso de Angular 15: Do In
 - Angular Material for UI components
 - Local Storage for data persistence
 
-## Development Server
+## Installation and Development Server
 
-Run `ng serve` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone this repository:
+   git clone <repository-url>
+2. Navigate to the project directory:
+   cd <project-folder>
+3. Install the dependencies:
+   npm install
+4. Start the development server:
+   npm start
 
-## Build
+Navigate to `http://localhost:4200/` in your browser to see the application. The application will automatically reload if you change any of the source files.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+> **Note:** Ensure you have an updated version of Node.js installed on your machine. You can verify your Node.js version with:
+> node -v
+
+
