@@ -1,4 +1,4 @@
-# Todo List Application
+# Todo List App
 
 This is a Todo List application developed with Angular 18, designed to help users manage their tasks effectively. The application allows users to create, update, delete, and mark tasks as completed, providing a seamless user experience.
 
