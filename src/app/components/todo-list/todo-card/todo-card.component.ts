@@ -1,18 +1,18 @@
-import { NgFor, NgIf, NgTemplateOutlet } from '@angular/common';
-import { Component, computed, inject, OnInit } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTabsModule } from '@angular/material/tabs';
-import { TodoSignalsService } from '../../../services/todo-signals.service';
-import { TodoKeyLocalStorage } from '../../../models/enum/todoKeyLocalStorage';
-import { Todo } from '../../../models/model/todo.model';
+import {NgFor, NgIf} from '@angular/common';
+import {Component, computed, inject, OnInit} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
+import {TodoSignalsService} from '../../../services/todo-signals.service';
+import {TodoKeyLocalStorage} from '../../../models/enum/todoKeyLocalStorage';
+import {Todo} from '../../../models/model/todo.model';
 
 
 @Component({
   selector: 'app-todo-card',
   standalone: true,
-  imports: [NgFor, NgIf, NgTemplateOutlet, MatCardModule, MatButtonModule, MatIconModule, MatTabsModule],
+  imports: [NgFor, NgIf, MatCardModule, MatButtonModule, MatIconModule, MatTabsModule],
   templateUrl: './todo-card.component.html',
   styleUrls: ['./todo-card.component.scss']
 })
@@ -51,11 +51,11 @@ export class TodoCardComponent implements OnInit {
     if (todoId) {
       this.todosSignal.update((todos) => {
         return todos.map((todo) =>
-          todo.id === todoId ? { ...todo, done: !todo.done } : todo
+          todo.id === todoId ? {...todo, done: !todo.done} : todo
         );
-        this.saveTodosInLocalStorage();
       });
     }
+    this.saveTodosInLocalStorage();
   }
 
   public handleDeleteTodo(todo: Todo): void {
@@ -63,8 +63,7 @@ export class TodoCardComponent implements OnInit {
     // which includes all items except the one with the matching id.
     // This effectively removes the specified todo item from the list.
     this.todosSignal.update((todos) => {
-      const updatedTodos = todos.filter((item) => item.id !== todo.id);
-      return updatedTodos;
+      return todos.filter((item) => item.id !== todo.id);
     });
 
     // Save the updated todos list in LocalStorage
