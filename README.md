@@ -17,7 +17,7 @@ This application was built based on the Udemy course [Curso de Angular 15: Do In
 
 ## Technologies Used
 
-- Angular 18
+- Angular 19
 - TypeScript
 - Angular Material for UI components
 - Local Storage for data persistence
@@ -44,6 +44,8 @@ This application was built based on the Udemy course [Curso de Angular 15: Do In
 Navigate to `http://localhost:4200/` in your browser to see the application. The application will automatically reload if you change any of the source files.
 
 > **Note:** Ensure you have an updated version of Node.js installed on your machine. You can verify your Node.js version with:
+>
 > ```bash
 > node -v
-> 
+>
+> ```
